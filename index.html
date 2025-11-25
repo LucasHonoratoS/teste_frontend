@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Supremo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg sup-nav">
+    <div class="container position-relative">
+        <span class="navbar-toggler-icon"></span>
+        <a class="navbar-brand m-0 position-absolute start-50 translate-middle-x d-flex align-items-center gap-2" href="#">
+            <img src="assets/img/logosupremo.png" alt="Logo Supremo" class="sup-logo">
+        </a>
+        <div class="ms-auto d-none d-lg-flex align-items-center text-white gap-2 sup-phone">
+            <i class="bi bi-whatsapp"></i>
+            <a href="tel:+5547987654321" class="text-white text-decoration-none">
+                (47) 98765-4321
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- =============== HERO =============== -->
+<header class="hero d-flex justify-content-center align-items-center text-white">
+    <div class="hero-content text-start">
+        <h1 class="hero-title">
+            Imóveis na Praia Brava e<br>
+            Fazenda em Itajaí
+        </h1>
+        <div class="search-bar d-flex align-items-center p-3 rounded">
+            <div class="input-group search-item">
+                <span class="input-group-text bg-transparent border-0 text-white">
+                    <i class="bi bi-house-door"></i>
+                </span>
+                <select class="form-select bg-transparent text-white border-0 border-bottom">
+                    <option selected>Tipos</option>
+                    <option>Apartamento</option>
+                    <option>Casa</option>
+                </select>
+            </div>
+            <div class="search-item">
+                <i class="bi bi-house-door"></i>
+                <select class="form-select">
+                    <option selected>Tipos</option>
+                    <option>Apartamento</option>
+                    <option>Casa</option>
+                </select>
+            </div>
+            <div class="search-item">
+                <i class="bi bi-geo-alt"></i>
+                <select class="form-select">
+                    <option selected>Cidades</option>
+                    <option>Itajaí</option>
+                    <option>Balneário Camboriú</option>
+                </select>
+            </div>
+            <div class="search-item">
+                <i class="bi bi-map"></i>
+                <select class="form-select">
+                    <option selected>Bairros</option>
+                </select>
+            </div>
+            <div class="search-item">
+                <i class="bi bi-cash"></i>
+                <select class="form-select">
+                    <option selected>Valor</option>
+                </select>
+            </div>
+            <div class="search-item">
+                <i class="bi bi-hash"></i>
+                <input type="text" class="form-control" placeholder="Código">
+            </div>
+            <button class="btn btn-orange">
+                <i class="bi bi-search"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- =============== CONHEÇA NOSSOS IMÓVEIS =============== -->
+<section class="sec-imoveis py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="imoveis-title">Conheça nossos Imóveis</h2>
+            <p class="imoveis-subtitle">O que nossos visitantes mais procuram em nosso site.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4 col-12 mb-4">
+                <div class="city-card">
+                    <img src="assets/img/itajai.png" alt="Itajaí">
+                    <div class="city-overlay">
+                        <h3 class="city-name">Itajaí</h3>
+                        <div class="city-meta">
+                            <i class="bi bi-geo-alt-fill me-1"></i>
+                            <span>Santa Catarina</span>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="city-list">
+                    <li>Apartamentos no bairro Fazenda</li>
+                    <li>Apartamentos com 3 quartos em Itajaí</li>
+                    <li>Lançamentos em Itajaí</li>
+                    <li>Apartamentos acima de 100m² em Itajaí</li>
+                    <li>Apartamentos Mobiliados em Itajaí</li>
+                </ul>
+                <a href="#" class="city-link">Ver todos imóveis</a>
+            </div>
+            <div class="col-md-4 col-12 mb-4">
+                <div class="city-card">
+                    <img src="assets/img/praia_brava.png" alt="Praia Brava">
+                    <div class="city-overlay">
+                        <h3 class="city-name">Praia Brava</h3>
+                        <div class="city-meta">
+                            <i class="bi bi-geo-alt-fill me-1"></i>
+                            <span>Santa Catarina</span>
+                        </div>
+                    </div>
+                </div>
+                <ul class="city-list">
+                    <li>Apartamento na Praia Brava</li>
+                    <li>Mobiliados na Praia Brava</li>
+                    <li>Frente Mar na Praia Brava</li>
+                    <li>3 quartos na Praia Brava</li>
+                    <li>Lançamentos na Praia Brava</li>
+                </ul>
+                <a href="#" class="city-link">Ver todos imóveis</a>
+            </div>
+            <div class="col-md-4 col-12 mb-4">
+                <div class="city-card">
+                <img src="assets/img/balneario_camboriu.png" alt="Balneário Camboriú">
+                    <div class="city-overlay">
+                        <h3 class="city-name">Balneário Camboriú</h3>
+                        <div class="city-meta">
+                            <i class="bi bi-geo-alt-fill me-1"></i>
+                            <span>Santa Catarina</span>
+                        </div>
+                    </div>
+                </div>
+                <ul class="city-list">
+                    <li>Cobertura Balneário Camboriú</li>
+                    <li>Apartamento em Balneário Camboriú</li>
+                    <li>Balneário Camboriú 3 quartos</li>
+                    <li>Frente mar Balneário Camboriú</li>
+                    <li>Mobiliados em Balneário Camboriú</li>
+                </ul>
+                <a href="#" class="city-link">Ver todos imóveis</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =============== DESTAQUES =============== -->
+<section class="sec-destaques py-5">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h3 class="sec-title">Destaques</h3>
+            <a href="#" class="sec-see-more">Ver mais <i class="bi bi-arrow-right-short"></i></a>
+        </div>
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <article class="prop-card">
+                    <div class="prop-img">
+                        <div class="prop-badges">
+                            <span class="prop-badge badge-orange">Exclusivo</span>
+                            <span class="prop-badge badge-orange">Na planta</span>
+                        </div>
+                        <img src="assets/img/torres_da_brava.png" alt="">
+                    </div>
+                    <div class="prop-body">
+                        <p class="prop-price">R$ 2.180.000</p>
+                        <p class="prop-title">Torre das Brava Sterne • Apartamento</p>
+                        <p class="prop-sub">Rua Luci Canziani • Praia Brava, Itajaí</p>
+                        <p class="prop-info">
+                            <strong>110m² • 3 quartos • 1 suíte • 2 vagas</strong>
+                        </p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-md-4">
+                <article class="prop-card">
+                    <div class="prop-img">
+                        <div class="prop-badges">
+                            <span class="prop-badge badge-orange">Mobiliado</span>
+                            <span class="prop-badge badge-orange">Exclusivo</span>
+                        </div>
+                        <img src="assets/img/riviera_business.png" alt="">
+                    </div>
+                    <div class="prop-body">
+                        <p class="prop-price">R$ 1.300.000</p>
+                        <p class="prop-title">Rivera Business & Mall • Sala Comercial</p>
+                        <p class="prop-sub">Avenida Osvaldo Reis - Praia Brava, Itajaí</p>
+                        <p class="prop-info">
+                            <strong>45m² • 1 vaga</strong>
+                        </p>
+                    </div>
+                </article>
+            </div>
+          
+            <div class="col-12 col-md-4">
+                <article class="prop-card">
+                    <div class="prop-img">
+                        <div class="prop-badges">
+                            <span class="prop-badge badge-orange">Mobiliado</span>
+                        </div>
+                        <img src="assets/img/cobertura_itajai.png" alt="">
+                    </div>
+                    <div class="prop-body">
+                        <p class="prop-price">R$ 3.600.000</p>
+                        <p class="prop-title">Brisa do Mar • Cobertura</p>
+                        <p class="prop-sub">Rua Camboriú - Fazenda, Itajaí</p>
+                        <p class="prop-info">
+                            <strong>264m² • 3 quartos • 3 suítes • 2 vagas</strong>
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =============== EXCLUSIVOS =============== -->
+<section class="sec-exclusivos py-5">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4 text-white">
+            <h3 class="sec-title text-white">Exclusivos</h3>
+            <a href="#" class="sec-see-more text-white">Ver mais <i class="bi bi-arrow-right-short"></i></a>
+        </div>
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <article class="prop-card dark">
+                    <div class="prop-img">
+                        <div class="prop-badges">
+                            <span class="prop-badge badge-orange">Exclusivo</span>
+                        </div>
+                        <img src="assets/img/brava_select.png" alt="">
+                    </div>
+                    <div class="prop-body">
+                        <p class="prop-price text-white">R$ 2.400.000</p>
+                        <p class="prop-title text-white">Brava Select • Apartamento</p>
+                        <p class="prop-sub">Rua conselheiro Júlio Kumm - Praia Brava, Itajaí</p>
+                        <p class="prop-info text-white">
+                            <strong>100m² • 3 quartos • 1 suíte • 2 vagas</strong>
+                        </p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-md-4">
+                <article class="prop-card dark">
+                    <div class="prop-img">
+                        <div class="prop-badges">
+                            <span class="prop-badge badge-orange">Exclusivo</span>
+                            <span class="prop-badge badge-orange">Na planta</span>
+                        </div>
+                        <img src="assets/img/splendore.png" alt="">
+                    </div>
+                    <div class="prop-body">
+                        <p class="prop-price text-white">R$ 3.100.000</p>
+                        <p class="prop-title text-white">Splendore • Apartamento</p>
+                        <p class="prop-sub">Rua Flamboyants - Praia Brava, Itajaí</p>
+                        <p class="prop-info text-white">
+                            <strong>123m² • 3 quartos • 1 suíte• 2 vagas</strong>
+                        </p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-md-4">
+                <article class="prop-card dark">
+                    <div class="prop-img">
+                        <div class="prop-badges">
+                            <span class="prop-badge badge-orange">Exclusivo</span>
+                            <span class="prop-badge badge-orange">Na planta</span>
+                        </div>
+                        <img src="assets/img/torres_da_brava.png" alt="">
+                    </div>
+                    <div class="prop-body">
+                        <p class="prop-price text-white">R$ 2.180.000</p>
+                        <p class="prop-title text-white">Torre das Brava Sirena • Apartamento</p>
+                        <p class="prop-sub">Rua Luci Canziani - Praia Brava, Itajaí</p>
+                        <p class="prop-info text-white">
+                            <strong>110m² • 3 quartos • 1 suíte • 2 vagas</strong>
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =============== SOBRE NÓS / SUPREMO CRM =============== -->
+<section class="sec-about">
+    <div class="container">
+        <div class="about-card row g-0 align-items-center">
+            <div class="col-md-7 about-text-col">
+                <span class="about-tag">Sobre nós</span>
+                <h3 class="about-title">Supremo CRM</h3>
+                <p class="about-text">
+                  Nossa missão é encontrar a melhor solução para os clientes no mercado
+                  imobiliário, proporcionando retorno financeiro e satisfação com o investimento
+                  realizado.
+                </p>
+                <p class="about-text">
+                  Localizada na belíssima Praia Brava, em Itajaí/SC, a Adamante Negócios é uma
+                  imobiliária focada nas pessoas, em seus desejos e em maximizar o retorno para
+                  seus investimentos. Proporciona consultoria personalizada e abre caminhos para
+                  a realização de negócios imobiliários surpreendentes. Conhecimento do mercado,
+                  segurança, confiança e transparência estão sempre presentes na busca pela
+                  excelência na realização de cada negócio. Venha nos conhecer e entender como
+                  podemos fazer a diferença na sua aquisição imobiliária no litoral catarinense.
+                </p>
+              
+                <div class="about-actions">
+                    <a href="#" class="about-link">Ver mais</a>
+                    <button class="about-btn">
+                      <i class="bi bi-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+          
+            <div class="col-md-5 about-image-col">
+                <img src="assets/img/corretor-removebg-preview.png" alt="Corretor" class="about-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =============== CTAS FINAIS =============== -->
+<section class="sec-cta py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <a href="#" class="cta-card">
+                    <div class="cta-bg">
+                        <img src="assets/img/seu_imovel.png" alt="">
+                    </div>
+                    <div class="cta-overlay">
+                        <span class="cta-tag">Anuncie</span>
+                        <h3 class="cta-title">Seu imóvel</h3>
+                        <span class="cta-action">Anunciar <i class="bi bi-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+          
+            <div class="col-md-6">
+                <a href="#" class="cta-card">
+                    <div class="cta-bg">
+                        <img src="assets/img/equipe.png" alt="">
+                    </div>
+                    <div class="cta-overlay">
+                        <span class="cta-tag">Conheça nossa</span>
+                        <h3 class="cta-title">Equipe</h3>
+                        <span class="cta-action">Acessar <i class="bi bi-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =============== FOOTER =============== -->
+<footer class="sec-footer">
+    <div class="container footer-inner">
+        <div class="footer-top d-flex align-items-center justify-content-between">
+            <div>
+                <img src="assets/img/logosupremo.png" alt="Supremo" class="footer-logo">
+            </div>
+            <div class="footer-social d-flex gap-2">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+            </div>
+            <div class="footer-phone d-flex align-items-center gap-2">
+                <i class="bi bi-whatsapp"></i>
+                <span>(47) 98765-4321</span>
+            </div>
+        </div>
+        <div class="row gy-4 mt-3 mb-4">
+            <div class="col-lg-3 col-md-4 col-12">
+                  <h5 class="footer-title">Navegação</h5>
+                  <ul class="footer-list">
+                      <li><a href="#">Página Inicial</a></li>
+                      <li><a href="#">Buscar Imóveis</a></li>
+                      <li><a href="#">Empreendimentos</a></li>
+                      <li><a href="#">Anuncie seu Imóvel</a></li>
+                      <li><a href="#">Sobre Nós</a></li>
+                      <li><a href="#">Entre em Contato</a></li>
+                      <li><a href="#">Política de Privacidade</a></li>
+                  </ul>
+            </div>
+            <div class="col-lg-6 col-md-4 col-12">
+                <h5 class="footer-title">Mais buscados</h5>
+                <div class="row footer-list-2cols gx-4">
+                    <div class="col-6">
+                        <ul class="footer-list">
+                            <li><a href="#">3 quartos Praia Brava</a></li>
+                            <li><a href="#">Imóveis até 5 milhões</a></li>
+                            <li><a href="#">Apartamentos em Balneário Camboriú</a></li>
+                            <li><a href="#">Cobertura Balneário Camboriú</a></li>
+                            <li><a href="#">Cobertura Navegantes</a></li>
+                            <li><a href="#">2 quartos em Camboriú</a></li>
+                            <li><a href="#">Apartamento no bairro Fazenda</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul class="footer-list">
+                            <li><a href="#">Apartamento em Camboriú</a></li>
+                            <li><a href="#">Apartamentos 3 vagas</a></li>
+                            <li><a href="#">Com 100m² ou mais</a></li>
+                            <li><a href="#">Apartamentos Frente Mar</a></li>
+                            <li><a href="#">Mobiliados em Navegantes</a></li>
+                            <li><a href="#">Navegantes 3 quartos</a></li>
+                            <li><a href="#">Mobiliados na Praia Brava</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+                <h5 class="footer-title">Endereço</h5>
+                <p class="footer-text small mb-1">
+                    Riviera Business & Mall<br>
+                    Av. Francisco Reis, 281 - Sala 12 - Térreo<br>
+                    Meia Praia, Itapema - SC<br>
+                    CEP: 88000-000
+                </p>
+                <p class="footer-text small mb-1">
+                    <br>CRECI/SC 12345-J
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom text-center py-3">
+        <small>Site desenvolvido por <strong>Supremo CRM</strong></small>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

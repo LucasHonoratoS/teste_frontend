@@ -1,0 +1,683 @@
+/* =================== NAVBAR =================== */
+.sup-nav {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: transparent;
+}
+
+.sup-logo {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1) brightness(5);
+}
+
+.sup-phone i {
+    font-size: 1.1rem;
+}
+
+/* =================== HERO =================== */
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/vista.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(6,12,24,0.46), rgba(6,12,24,0.64));
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    width: 100%;
+}
+
+.hero-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    background: rgba(6,12,24,0.8);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 750px;
+}
+
+.search-item {
+    position: relative;
+    flex: 1;
+}
+
+.search-item i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.form-select, .form-control {
+    padding-left: 35px;
+    background: transparent;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+
+.form-select option {
+    color: #000;
+}
+
+.btn-orange {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    border-radius: 6px;
+}
+
+/* =================== CONHEÇA NOSSOS IMÓVEIS =================== */
+
+.sec-imoveis {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.sec-imoveis .container {
+  max-width: 1180px;
+}
+
+.sec-imoveis .row {
+  --bs-gutter-x: 3.2rem;
+  --bs-gutter-y: 2.4rem;
+}
+
+.imoveis-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.imoveis-subtitle {
+  font-size: 1rem;
+  color: #ff6b00;
+  margin: 0;
+}
+
+.city-card {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .2s ease;
+  aspect-ratio: 1 / 1;
+}
+
+.city-card:hover {
+  transform: translateY(-4px);
+}
+
+.city-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.city-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0,0,0,0) 60%,
+    rgba(0,0,0,0.85) 100%
+  );
+  z-index: 1;
+}
+
+.city-overlay {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  bottom: 22px;
+  color: #fff;
+  z-index: 2;
+}
+
+.city-name {
+  font-size: 1.55rem;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+}
+
+.city-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+  opacity: 0.92;
+}
+
+.city-list {
+  margin-top: 20px;
+  margin-bottom: 6px;
+  padding-left: 0;
+  list-style: none;
+  font-size: 0.96rem;
+  color: #333;
+}
+
+.city-list li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 6px;
+}
+
+.city-list li::before {
+  content: "›";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #777;
+  font-size: 1rem;
+}
+
+.city-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #ff6b00;
+  text-decoration: none;
+}
+
+/* =================== DESTAQUES / EXCLUSIVOS =================== */
+
+.sec-destaques {
+  background: #ffffff;
+}
+
+.sec-exclusivos {
+  background: #0c2340;
+}
+
+.sec-title {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.sec-see-more {
+  font-size: 0.9rem;
+  color: #111827;
+  text-decoration: none;
+}
+
+.sec-exclusivos .sec-see-more {
+  color: #e5e7eb;
+}
+
+.sec-see-more i {
+  vertical-align: middle;
+}
+
+.prop-card {
+  border-radius: 0;
+  overflow: visible;
+  background: #ffffff;
+  box-shadow: none;
+  border: none;
+}
+
+.prop-card.dark {
+  border-radius: 0;
+  overflow: visible;
+  background: #12253f;
+  box-shadow: none;
+  border: none;
+}
+
+.prop-img {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.prop-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.prop-badges {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  gap: 6px;
+  z-index: 2;
+}
+
+.prop-badge {
+  position: static;
+  border-radius: 999px;
+  padding: 2px 10px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.prop-badge + .prop-badge {
+  left: auto;
+  right: auto;
+}
+
+.badge-orange { background: #ff6b00; }
+.badge-red    { background: #ef4444; }
+.badge-dark   { background: rgba(15,23,42,0.9); }
+
+.prop-body {
+  padding: 12px 14px 14px;
+}
+
+.prop-price {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.prop-title {
+  font-size: 0.9rem;
+  margin-bottom: 2px;
+}
+
+.prop-sub {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-bottom: 6px;
+}
+
+.prop-info {
+  font-size: 0.75rem;
+  color: #4b5563;
+  margin-bottom: 0;
+}
+
+/* =================== SOBRE =================== */
+
+.sec-about {
+  background: #f3f4f6;
+  padding: 80px 0;
+}
+
+.sec-about .container {
+  max-width: 1180px;
+}
+
+.about-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.14);
+  border: 1px solid rgba(15, 23, 42, 0.04);
+  padding: 40px 56px;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.about-text-col {
+  padding-right: 40px;
+}
+
+.about-tag {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #fb923c;
+  font-weight: 600;
+}
+
+.about-title {
+  font-size: 2.6rem;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-top: 6px;
+  margin-bottom: 18px;
+}
+
+.about-text {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #4b5563;
+  margin-bottom: 10px;
+}
+
+.about-actions {
+  margin-top: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.about-link {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: #111827;
+  text-decoration: none;
+}
+
+.about-link:hover {
+  color: #fb923c;
+}
+
+.about-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.about-btn i {
+  font-size: 1rem;
+}
+
+.about-btn:hover {
+  background: #111827;
+  color: #ffffff;
+  border-color: #111827;
+}
+
+.about-image-col {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.about-img {
+  height: 550px;
+  width: auto;
+
+  margin-top: -120px;
+  margin-bottom: -40px;
+}
+
+@media (max-width: 991.98px) {
+  .about-card {
+    padding: 28px 22px;
+  }
+
+  .about-text-col {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-image-col {
+    justify-content: center;
+  }
+
+  .about-title {
+    font-size: 2.1rem;
+  }
+
+  .about-img {
+    max-height: 320px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .sec-about {
+    padding: 60px 0;
+  }
+
+  .about-card {
+    border-radius: 20px;
+  }
+
+  .about-title {
+    font-size: 1.8rem;
+  }
+}
+
+
+/* =================== CTAs =================== */
+
+.sec-cta {
+  background: #f3f4f6;
+}
+
+.cta-card {
+  position: relative;
+  display: block;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0 8px 28px rgba(15,23,42,0.22);
+}
+
+.cta-bg {
+  height: 190px;
+}
+
+.cta-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cta-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.75));
+  padding: 18px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.cta-tag {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+.cta-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 2px 0 4px;
+}
+
+.cta-action {
+  font-size: 0.9rem;
+}
+
+/* =================== FOOTER =================== */
+
+.sec-footer {
+  background: #061528;
+  color: #e5e7eb;
+  font-size: 0.85rem;
+}
+
+/* limita a largura do conteúdo do footer e centraliza */
+.sec-footer .footer-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* topo do footer: logo + redes + telefone */
+.footer-top {
+  border-bottom: 1px solid rgba(148, 163, 184, 0.35); /* linha separando topo do resto */
+  padding: 24px 0;
+}
+
+/* logo */
+.footer-logo {
+  height: 56px;
+  width: auto;
+}
+
+/* redes sociais centralizadas */
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  border: 1px solid rgba(148,163,184,0.7);
+  color: #e5e7eb;
+  font-size: 0.8rem;
+}
+
+/* telefone à direita */
+.footer-phone span {
+  color: #e5e7eb;
+  font-weight: 500;
+}
+
+.footer-phone i {
+  font-size: 1.1rem;
+}
+
+/* bloco principal com as 3 colunas */
+.footer-main {
+  padding: 28px 0 30px;
+}
+
+/* títulos das colunas */
+.footer-title {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin-bottom: 10px;
+}
+
+/* listas */
+.footer-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  font-size: 0.82rem;
+}
+
+.footer-list li {
+  margin-bottom: 4px;
+}
+
+.footer-list a {
+  color: #9ca3af;
+  text-decoration: none;
+}
+
+.footer-list a:hover {
+  color: #ffffff;
+}
+
+/* bloco de 2 colunas dentro de "Mais buscados" */
+.footer-list-2cols {
+  margin-top: 4px;
+}
+
+/* texto geral */
+.footer-text {
+  color: #9ca3af;
+}
+
+/* faixa final branca */
+.footer-bottom {
+  background: #ffffff;        /* agora é branca, como no layout */
+  color: #111827;
+  font-size: 0.8rem;
+}
+
+/* =================== RESPONSIVO =================== */
+
+@media (max-width: 991px) {
+  .hero {
+    height: 520px;
+    align-items: flex-start;
+    padding-top: 120px;
+  }
+
+  .search-bar {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 575px) {
+  .sec-imoveis .col-md-4 {
+    flex: 0 0 31%;
+    max-width: 31%;
+  }
+
+  .imoveis-title {
+    font-size: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .search-bar {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .footer-social {
+    order: 2;
+  }
+
+  .footer-phone {
+    order: 3;
+  }
+}
